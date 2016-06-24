@@ -51,10 +51,10 @@ music.close()
 from twilio.rest import TwilioRestClient
 	
 
-accountSID = 'AC44a06791903b9b513c48ca1d2ea4efa5'
-authToken = '8d80926d94f72ccc36aebbf7cd1cc2b9'
+accountSID = 'ACxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'   # ur twillio id
+authToken = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx' # ur twillio token
 twilioCli = TwilioRestClient(accountSID, authToken)
-myTwilioNumber = '+12017304733'
-myCellPhone = '+919632402156'
+myTwilioNumber = '+12111111111'  # ur twillio no.
+myCellPhone = '+919999999999' # ur personal no.
 message = twilioCli.messages.create(body= " " + comb + 'Song has been succesffuly downloaded', from_=myTwilioNumber, to=myCellPhone)
 
